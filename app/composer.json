@@ -1,0 +1,16 @@
+{
+    "require": {
+        "twig/twig": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "./",
+            "app\\models\\": "/models",
+            "app\\controllers\\": "/controllers",
+            "app\\services\\": "/services",
+            "app\\traits\\": "/traits",
+            "app\\views\\": "/views"
+
+        }
+    }
+}
