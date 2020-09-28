@@ -1,0 +1,14 @@
+{% extends 'layouts/main.twig' %}
+
+{% block conent %}
+    <h1>Blog</h1>
+
+    {{ user }}
+    {{ user.name }}
+    <form method="post">
+        <input name="name" placeholder="name">
+        <input name="password" placeholder="password">
+        <input name="login" placeholder="login">
+        <input type="submit">
+    </form>
+{% endblock %}
