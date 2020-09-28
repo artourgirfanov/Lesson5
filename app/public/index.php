@@ -1,7 +1,11 @@
 <?
+use app\services\Autoload;
 include dirname(__DIR__) . '/vendor/autoload.php';
 
 new \Twig\Loader\FilesystemLoader();
+
+include dirname(__DIR__) . "/services/Autoload.php";
+spl_autoload_register([(new Autoload()), 'load']);
 
 $controllerName = 'user';
 if (!empty(trim($_GET['c']))) {
